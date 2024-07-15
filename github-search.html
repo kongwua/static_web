@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>GitHub 用户信息查询</title>
+    <link rel="stylesheet" href="./css/github-search.css">
+</head>
+<body>
+    <div class="container">
+        <h1>GitHub 用户信息查询</h1>
+        <input type="text" id="username" placeholder="输入 GitHub 用户名">
+        <button onclick="fetchGitHubProfile()">查询</button>
+        <button onclick="window.location.href='./index.html'">返回首页</button>
+        <div id="error" class="error"></div>
+        <div id="profile" class="profile">
+            <img id="avatar" src="" alt="头像" width="100">
+            <h2 id="name"></h2>
+            <p><strong>用户名:</strong> <span id="login"></span></p>
+            <p><strong>公司:</strong> <span id="company"></span></p>
+            <p><strong>博客:</strong> <a id="blog" href="" target="_blank"></a></p>
+            <p><strong>位置:</strong> <span id="location"></span></p>
+            <p><strong>邮箱:</strong> <span id="email"></span></p>
+            <p><strong>简介:</strong> <span id="bio"></span></p>
+            <p><strong>公共仓库:</strong> <span id="public_repos"></span></p>
+            <p><strong>公共 Gists:</strong> <span id="public_gists"></span></p>
+            <p><strong>粉丝:</strong> <span id="followers"></span></p>
+            <p><strong>关注:</strong> <span id="following"></span></p>
+            <p><strong>创建时间:</strong> <span id="created_at"></span></p>
+            <p><strong>更新时间:</strong> <span id="updated_at"></span></p>
+        </div>
+    </div>
+
+    <script src="./js/github-search.js"></script>
+</body>
+</html>
